@@ -25,6 +25,8 @@ function App() {
   const [author, setAuthor] = useState("");
   const [category, setCategory] = useState("");
   const [page, setPage] = useState("dashboard");
+  const [studentLibraryOpen, setStudentLibraryOpen] = useState(false);
+  const [ebookSearch, setEbookSearch] = useState("");
 const [scannedCode, setScannedCode] = useState("");
 const [selectedStudentId, setSelectedStudentId] = useState(null);
 const [selectedBookId, setSelectedBookId] = useState(null);
@@ -393,7 +395,64 @@ const returnBook = async (id) => {
   );
 
   const issued = books.filter((book) => book.issuedTo).length;
+if (studentLibraryOpen && !isLoggedIn) {
+  return (
+    <div className="login-container">
+      <div className="book-form">
+        <h1>📚 Student Digital Library</h1>
+        <p>Welcome! Read free books online.</p>
+        <input
+  type="text"
+  placeholder="🔍 Search books: Python, Java, Accounting..."
+  value={ebookSearch}
+  onChange={(e) => setEbookSearch(e.target.value)}
+  style={{
+    width: "100%",
+    padding: "12px",
+    marginBottom: "20px",
+    borderRadius: "8px",
+    border: "1px solid #ccc",
+    boxSizing: "border-box"
+  }}
+/>
+{("Think Python BCA".toLowerCase().includes(ebookSearch.toLowerCase())) && (
+  <>
+        <h3>🐍 Think Python — BCA</h3>
+        <a
+          href="https://greenteapress.com/wp/think-python-2e/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📖 Read Free Book
+        </a>
+        </>
+)}
+{("Think Java BCA B.Tech".toLowerCase().includes(ebookSearch.toLowerCase())) && (
+  <>
+        <h3>☕ Think Java — BCA / B.Tech</h3>
+<a
+  href="https://greenteapress.com/wp/think-java-2e/"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  📖 Read Free Book
+</a>
+</>
+)}
 
+        <br /><br />
+
+        <button
+          type="button"
+          className="primary"
+          onClick={() => setStudentLibraryOpen(false)}
+        >
+          ← Back to Login
+        </button>
+      </div>
+    </div>
+  );
+}
 if (!isLoggedIn) {
   return (
     <div className="login-container">
@@ -424,6 +483,13 @@ if (!isLoggedIn) {
         <button className="primary" type="submit">
           Login
         </button>
+        <button
+  type="button"
+  className="primary"
+  onClick={() => setStudentLibraryOpen(true)}
+>
+  📚 Student Library — Read Free Books
+</button>
       </form>
     </div>
   );
@@ -558,6 +624,14 @@ if (!isLoggedIn) {
   >
     📖 Read Free Book
   </a>
+  <h3>📊 Principles of Accounting — B.Com</h3>
+<a
+  href="https://openstax.org/subjects/business"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  📖 Find Free Accounting Books
+</a>
 </div>
 <div className="ebook-card">
   <h3>📐 Tea Time Numerical Analysis</h3>
