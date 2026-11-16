@@ -1,5 +1,6 @@
 
 import React, { useState } from "react";
+import StudyNovaAI from "./StudyNovaAI";
 import "./StudyNova.css";
 
 
@@ -1414,6 +1415,7 @@ const courses = ["BCA", "B.Tech", "B.Com", "BBA", "BA", "B.Sc"];
   </p>
   <p>📚 Learn More. Dream Bigger. Shine Brighter.</p>
 </section>
+      <StudyNovaAI />
     </div>
   );
 }
