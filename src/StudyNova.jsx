@@ -1293,9 +1293,14 @@ const courses = ["BCA", "B.Tech", "B.Com", "BBA", "BA", "B.Sc"];
 </button>
         <h3>{book.title}</h3>
         <p>Category: Motivation & Self-Growth</p>
-        <a href={book.url} target="_blank" rel="noopener noreferrer">
-          📖 Explore Book
-        </a>
+        <a
+  href={book.url}
+  target="_blank"
+  rel="noopener noreferrer"
+  onClick={() => handleReadBook(book)}
+>
+  📖 Explore Book
+</a>
       </div>
     ))}
 </div>
