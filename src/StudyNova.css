@@ -1,0 +1,1375 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7ff;
+  color: #1e293b;
+}
+
+h1 {
+  color: #4338ca;
+  font-size: 36px;
+}
+
+h2 {
+  color: #1e293b;
+  margin-top: 30px;
+}
+
+h3 {
+  color: #334155;
+}
+
+input {
+  border: 2px solid #c7d2fe;
+  border-radius: 10px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #6366f1;
+}
+
+a {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #4f46e5;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  background: #3730a3;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 27px;
+  }
+}
+/* StudyNova Book Cards */
+.book-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 24px;
+  margin: 16px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.book-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(79, 70, 229, 0.12);
+}
+
+.book-card h3 {
+  color: #4338ca;
+  margin-top: 0;
+}
+
+.book-card p {
+  color: #64748b;
+}
+/* StudyNova Premium Design */
+
+body {
+  background: #f5f7ff;
+}
+
+.book-card {
+  background: #ffffff;
+  border: 1px solid #e8eafd;
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 8px 28px rgba(47, 46, 116, 0.08);
+}
+
+.book-card h3 {
+  font-size: 22px;
+  color: #302a8c;
+}
+
+.book-card a {
+  background: linear-gradient(135deg, #6d5dfc, #4169e1);
+  border-radius: 12px;
+  padding: 13px 22px;
+}
+
+.book-card a:hover {
+  background: linear-gradient(135deg, #5141df, #3154c5);
+}
+
+@media (min-width: 768px) {
+  .book-card {
+    width: calc(50% - 16px);
+    margin: 0 12px 20px 0;
+  }
+}
+/* StudyNova Premium Homepage */
+
+.studynova-home {
+  min-height: 100vh;
+  padding: 40px 6%;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(
+    135deg,
+    #eef2ff 0%,
+    #e0e7ff 45%,
+    #f5f3ff 100%
+  );
+}
+
+.studynova-home h1 {
+  font-size: clamp(30px, 4vw, 52px);
+  font-weight: 800;
+  color: #312e81;
+  margin-bottom: 15px;
+}
+
+.studynova-home > p {
+  font-size: 18px;
+  color: #475569;
+}
+
+.studynova-home > input {
+  background: white;
+  box-shadow: 0 6px 20px rgba(79, 70, 229, 0.12);
+}
+.studynova-hero {
+  background: linear-gradient(135deg, #4338ca, #7c3aed, #2563eb);
+  color: white;
+  padding: 55px 35px;
+  border-radius: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+  box-shadow: 0 15px 35px rgba(67, 56, 202, 0.2);
+}
+
+.studynova-hero h1 {
+  color: white;
+  font-size: clamp(30px, 5vw, 52px);
+  margin: 0 0 15px;
+}
+
+.studynova-hero p {
+  color: #eef2ff;
+  font-size: 18px;
+  margin: 8px 0;
+}
+/* Premium Search Bar */
+
+.studynova-home > input {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+  margin: 25px auto 35px;
+  padding: 18px 24px !important;
+  font-size: 16px;
+  border: 2px solid #ddd6fe;
+  border-radius: 50px;
+  background: white;
+  box-shadow: 0 10px 30px rgba(67, 56, 202, 0.12);
+  transition: 0.3s;
+}
+
+.studynova-home > input:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 10px 35px rgba(124, 58, 237, 0.2);
+}
+/* Premium Course Categories */
+
+.course-categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 30px 0;
+}
+
+.course-categories button {
+  background: white;
+  color: #4338ca;
+  border: 2px solid #ddd6fe;
+  border-radius: 50px;
+  padding: 13px 24px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(67, 56, 202, 0.08);
+}
+
+.course-categories button:hover {
+  background: linear-gradient(135deg, #6366f1, #7c3aed);
+  color: white;
+  border-color: transparent;
+  transform: translateY(-3px);
+}
+/* StudyNova Founder Photo */
+
+.founder-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  object-position: center 20%;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  display: block;
+  margin: 0 auto 25px;
+}
+
+@media (max-width: 600px) {
+  .founder-photo {
+    width: 135px;
+    height: 135px;
+  }
+}
+/* Founder Photo + Hero Layout */
+
+@media (min-width: 600px) {
+  .studynova-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    text-align: left;
+    padding: 65px 250px 65px 50px;
+    min-height: 220px;
+  }
+
+  .studynova-hero .founder-photo {
+    position: absolute;
+    right: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 175px;
+    height: 175px;
+    margin: 0;
+  }
+}
+/* StudyNova Premium Navbar */
+
+.studynova-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  background: white;
+  padding: 18px 28px;
+  border-radius: 18px;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 20px rgba(67, 56, 202, 0.08);
+}
+
+.navbar-logo {
+  font-size: 26px;
+  font-weight: 800;
+  color: #4338ca;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.navbar-links a {
+  background: transparent;
+  color: #1e1b4b;
+  padding: 8px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.navbar-links a:hover {
+  background: transparent;
+  color: #7c3aed;
+}
+
+.navbar-contact {
+  background: linear-gradient(135deg, #7c3aed, #4f46e5);
+  color: white;
+  border-radius: 10px;
+  padding: 12px 20px;
+}
+
+@media (max-width: 600px) {
+  .studynova-navbar {
+    justify-content: center;
+    padding: 18px;
+  }
+
+  .navbar-links {
+    justify-content: center;
+    gap: 18px;
+  }
+}
+/* StudyNova About Section */
+
+.studynova-about {
+  background: white;
+  padding: 35px;
+  margin-top: 45px;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid #e0e7ff;
+  box-shadow: 0 8px 30px rgba(67, 56, 202, 0.08);
+}
+
+.studynova-about h2 {
+  color: #4338ca;
+  font-size: 28px;
+  margin-top: 0;
+}
+
+.studynova-about p {
+  color: #64748b;
+  font-size: 17px;
+  line-height: 1.8;
+  max-width: 650px;
+  margin: 12px auto;
+}
+/* StudyNova Book Cover Design */
+
+.book-cover {
+  height: 150px;
+  background: linear-gradient(135deg, #4338ca, #8b5cf6);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 65px;
+  margin-bottom: 20px;
+  box-shadow: inset 0 -10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.book-card:nth-child(2n) .book-cover {
+  background: linear-gradient(135deg, #0891b2, #2563eb);
+}
+
+.book-card:nth-child(3n) .book-cover {
+  background: linear-gradient(135deg, #db2777, #9333ea);
+}
+/* StudyNova Responsive Book Grid */
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 25px;
+}
+
+.books-grid .book-card {
+  display: block;
+  width: auto;
+  min-height: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .books-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .books-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Full Width Premium Navbar */
+
+.studynova-navbar {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+  .studynova-navbar {
+    flex-wrap: nowrap;
+  }
+}
+/* Compact Book Cards */
+
+.books-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.books-grid .book-card {
+  padding: 18px;
+  min-height: 0;
+}
+
+.books-grid .book-cover {
+  height: 145px;
+  margin-bottom: 14px;
+  font-size: 55px;
+}
+
+.books-grid .book-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.books-grid .book-card p {
+  font-size: 14px;
+}
+
+.books-grid .book-card a {
+  font-size: 14px;
+  padding: 10px 14px;
+}
+
+@media (max-width: 900px) {
+  .books-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .books-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Fix StudyNova Book Grid */
+
+.books-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 20px;
+  width: 100%;
+}
+
+.books-grid > .book-card {
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .books-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .books-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+/* Navbar Visibility Fix */
+.studynova-navbar {
+  display: flex !important;
+  position: relative;
+  z-index: 10;
+  visibility: visible;
+}
+/* Reference Style Book Cards */
+
+.books-grid .book-card {
+  padding: 14px !important;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(67, 56, 202, 0.12);
+}
+
+.books-grid .book-cover {
+  height: 175px;
+  border-radius: 15px;
+  margin-bottom: 12px;
+  font-size: 75px;
+}
+
+.books-grid .book-card h3 {
+  font-size: 18px;
+  color: #17134b;
+}
+
+.books-grid .book-card a {
+  display: block;
+  text-align: center;
+  background: white;
+  color: #6d28d9;
+  border: 2px solid #7c3aed;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.books-grid .book-card a:hover {
+  background: #7c3aed;
+  color: white;
+}
+/* Professional Book Cover Design */
+
+.books-grid .book-cover {
+  height: 175px;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1.3;
+  border-radius: 15px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+/* Unique Book Cover Colors */
+
+.books-grid .book-card:nth-child(1) .book-cover {
+  background: linear-gradient(135deg, #075985, #2563eb);
+}
+
+.books-grid .book-card:nth-child(2) .book-cover {
+  background: linear-gradient(135deg, #ea580c, #f97316);
+}
+
+.books-grid .book-card:nth-child(3) .book-cover {
+  background: linear-gradient(135deg, #312e81, #7c3aed);
+}
+/* Reference Style Horizontal Book Cards */
+
+.books-grid .book-card {
+  display: flex !important;
+  align-items: center;
+  gap: 16px;
+}
+
+.books-grid .book-cover {
+  width: 120px;
+  min-width: 120px;
+  height: 150px;
+  margin: 0;
+  font-size: 20px;
+}
+
+.books-grid .book-card h3 {
+  font-size: 17px;
+}
+
+/* Clean Book Card Layout */
+
+.books-grid .book-card {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.books-grid .book-cover {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+}
+
+.books-grid .book-card h3 {
+  margin: 0;
+}
+
+.books-grid .book-card p {
+  margin: 0;
+}
+
+.books-grid .book-card a {
+  margin-top: auto;
+  white-space: nowrap;
+  background: #4f46e5;
+  color: white;
+  border: none;
+}
+/* Fix Real Book Cover Image */
+
+.books-grid .book-cover img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.books-grid .book-cover {
+  overflow: hidden;
+}
+.books-grid .book-card:nth-child(2) .book-cover {
+  background: #ffffff;
+}
+/* Java cover box fits the book image */
+.books-grid .book-card:nth-child(2) .book-cover {
+  width: fit-content;
+  height: 180px;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+}
+
+.books-grid .book-card:nth-child(2) .book-cover img {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+/* Remove extra white space from Java card */
+.books-grid .book-card:nth-child(2) {
+  width: fit-content !important;
+  justify-self: start;
+}
+/* StudyNova Premium Dark Theme */
+
+body {
+  background: #080f20;
+}
+
+.studynova-home {
+  background: #080f20 !important;
+  color: #f8fafc;
+  min-height: 100vh;
+}
+/* StudyNova Dark Sidebar */
+
+.studynova-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  background: #101a30;
+  border-right: 1px solid #263452;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  z-index: 100;
+}
+
+.studynova-sidebar h2 {
+  color: #ffffff;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.studynova-sidebar a {
+  color: #aebbd3;
+  text-decoration: none;
+  padding: 12px 15px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.studynova-sidebar a:hover {
+  background: #263765;
+  color: #ffffff;
+}
+/* Space for the left sidebar */
+
+@media (min-width: 901px) {
+  .studynova-home {
+    padding-left: 250px !important;
+    box-sizing: border-box;
+  }
+}
+/* Premium Dark Navbar */
+
+.studynova-navbar {
+  background: #111c33 !important;
+  border: 1px solid #263452;
+  border-radius: 16px;
+  box-shadow: none !important;
+}
+
+.navbar-logo {
+  color: #ffffff !important;
+}
+
+.navbar-links a {
+  color: #b8c5df !important;
+}
+
+.navbar-links a:hover {
+  color: #a78bfa !important;
+}
+
+.navbar-contact {
+  background: #6d28d9 !important;
+  color: white !important;
+}
+/* Dark Theme Section Headings */
+.studynova-home > h2 {
+  color: #f8fafc !important;
+}
+/* Premium Dark Book Cards */
+
+.books-grid .book-card {
+  background: #131e35 !important;
+  border: 1px solid #2a3854 !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2) !important;
+}
+
+.books-grid .book-card h3 {
+  color: #ffffff !important;
+}
+
+.books-grid .book-card p {
+  color: #aebdd6 !important;
+}
+/* Compact Dashboard Book Grid */
+
+@media (min-width: 901px) {
+  .books-grid {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 20px !important;
+  }
+
+  .books-grid > .book-card {
+    width: 280px !important;
+    max-width: 100%;
+  }
+}
+/* Premium Dark Course Buttons */
+
+.course-categories button {
+  background: #17233d !important;
+  color: #e5e7eb !important;
+  border: 1px solid #354565 !important;
+  border-radius: 14px !important;
+}
+
+.course-categories button:hover {
+  background: #6d28d9 !important;
+  color: white !important;
+  border-color: #8b5cf6 !important;
+}
+/* Dark Search Bar - Final Fix */
+
+.studynova-home > input[type="text"] {
+  background: #17233d !important;
+  background-color: #17233d !important;
+  color: #ffffff !important;
+  border: 1px solid #354565 !important;
+  box-shadow: none !important;
+}
+
+.studynova-home > input[type="text"]::placeholder {
+  color: #aebdd6 !important;
+}
+/* Compact Dashboard Hero */
+
+.studynova-hero {
+  min-height: 220px !important;
+  padding: 35px 40px !important;
+  border-radius: 20px !important;
+}
+
+.studynova-hero h1 {
+  font-size: 36px !important;
+  line-height: 1.2;
+  max-width: 70%;
+}
+/* Premium Dashboard Hero Background */
+
+.studynova-hero {
+  background: linear-gradient(
+    120deg,
+    #101a3b 0%,
+    #25206b 55%,
+    #4338ca 100%
+  ) !important;
+
+  border: 1px solid #394279;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}
+/* Active Sidebar Home Link */
+
+.studynova-sidebar a:first-of-type {
+  background: linear-gradient(90deg, #4338ca, #6d28d9);
+  color: #ffffff !important;
+  border: 1px solid #7c3aed;
+  box-shadow: 0 4px 15px rgba(109, 40, 217, 0.25);
+}
+/* Premium Reading Hero Background */
+
+.studynova-hero {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8, 15, 35, 0.96),
+      rgba(30, 27, 95, 0.78)
+    ),
+    url("https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=1600")
+    center / cover no-repeat !important;
+}
+
+.studynova-hero h1,
+.studynova-hero p {
+  color: #ffffff !important;
+}
+/* Make hero background image more visible */
+
+.studynova-hero {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8, 15, 35, 0.92),
+      rgba(30, 27, 95, 0.45)
+    ),
+    url("https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=1600")
+    center / cover no-repeat !important;
+}
+/* Premium Think Python Book Cover */
+
+.books-grid .book-card:nth-child(1) .book-cover {
+  height: 220px;
+  padding: 8px;
+  background: #06152e !important;
+  overflow: hidden;
+}
+
+.books-grid .book-card:nth-child(1) .book-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+/* Match Python and Java cover heights */
+
+.books-grid .book-card:nth-child(1) .book-cover {
+  height: 220px;
+  padding: 0;
+}
+
+.books-grid .book-card:nth-child(1) .book-cover img {
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+/* Same size for Python and Java book covers */
+
+.books-grid .book-card:nth-child(1) .book-cover {
+  height: 216px !important;
+  width: 165px !important;
+  padding: 0 !important;
+}
+
+.books-grid .book-card:nth-child(1) .book-cover img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+}
+/* Compact Python Book Card */
+
+@media (min-width: 901px) {
+  .books-grid > .book-card:first-child {
+    width: 210px !important;
+  }
+}
+/* Compact Computer Networking Card */
+
+@media (min-width: 901px) {
+  .books-grid > .book-card:nth-child(3) {
+    width: 210px !important;
+  }
+}
+/* Networking Book Cover Size */
+
+.books-grid .book-card:nth-child(3) .book-cover {
+  height: 216px !important;
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.books-grid .book-card:nth-child(3) .book-cover img {
+  height: 100% !important;
+  width: auto !important;
+  max-width: 100% !important;
+  object-fit: contain !important;
+}
+/* Uniform Book Cover Background */
+
+.books-grid .book-cover {
+  background: #06152e !important;
+}
+/* Premium Dark About Section */
+
+.studynova-about {
+  background: #131e35 !important;
+  border: 1px solid #2a3854 !important;
+  box-shadow: none !important;
+}
+
+.studynova-about h2 {
+  color: #ffffff !important;
+}
+
+.studynova-about p {
+  color: #b8c5df !important;
+}
+/* Sidebar Navigation - Premium Style */
+
+.studynova-sidebar a {
+  background: transparent !important;
+  color: #b8c5df !important;
+  border: 1px solid transparent !important;
+  box-shadow: none !important;
+}
+
+.studynova-sidebar a:first-of-type {
+  background: linear-gradient(90deg, #4338ca, #6d28d9) !important;
+  color: white !important;
+}
+
+.studynova-sidebar a:hover {
+  background: #263765 !important;
+  color: white !important;
+}
+/* Responsive Sidebar Fix */
+
+@media (max-width: 900px) {
+  .studynova-sidebar {
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .studynova-home {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+/* Mobile Responsive Sidebar */
+@media (max-width: 600px) {
+  .studynova-sidebar {
+    display: none !important;
+  }
+}
+/* Mobile Layout Fix */
+@media (max-width: 600px) {
+  .studynova-home {
+    width: 100% !important;
+    margin-left: 0 !important;
+    padding: 16px !important;
+    box-sizing: border-box;
+  }
+}
+/* Mobile Navbar */
+@media (max-width: 600px) {
+  .studynova-navbar {
+    padding: 14px !important;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar-logo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+}
+/* Mobile Hero Heading */
+@media (max-width: 600px) {
+  .studynova-hero h1 {
+    font-size: 28px !important;
+    line-height: 1.3 !important;
+  }
+}
+/* Compact Mobile Hero */
+@media (max-width: 600px) {
+  .studynova-hero {
+    padding: 24px 16px !important;
+    min-height: 0 !important;
+    height: auto !important;
+  }
+}
+/* Equal Width Mobile Book Cards */
+@media (max-width: 600px) {
+  .books-grid {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 20px !important;
+  }
+
+  .books-grid > .book-card {
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+}
+/* Mobile Book Cards - Equal Width */
+@media (max-width: 600px) {
+  .books-grid {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    width: 100% !important;
+  }
+
+  .books-grid > .book-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    box-sizing: border-box !important;
+  }
+}
+/* Fix all book cards on mobile */
+@media (max-width: 600px) {
+  .books-grid > .book-card {
+    display: block !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width: 600px) {
+  .books-grid .book-cover {
+    width: 100% !important;
+    height: 260px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-bottom: 16px !important;
+  }
+
+  .books-grid .book-cover img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: contain !important;
+  }
+}
+@media (max-width: 600px) {
+  .books-grid .book-cover {
+    height: 220px !important;
+  }
+
+  .books-grid .book-cover img {
+    width: auto !important;
+    height: 200px !important;
+    max-width: 100% !important;
+    object-fit: contain !important;
+  }
+}
+@media (max-width: 600px) {
+  .course-categories {
+    margin-top: 8px !important;
+    margin-bottom: 24px !important;
+  }
+}
+@media (max-width: 600px) {
+  .books-grid {
+    gap: 16px !important;
+  }
+}
+/* Same size for all book cover images */
+.books-grid .book-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/* Financial Accounting cover size fix */
+.books-grid .book-cover img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+}
+.books-grid .book-cover img {
+  height: 260px !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+/* Compact Library Book Cards */
+.books-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)) !important;
+  gap: 16px !important;
+}
+
+.books-grid .book-card {
+  width: 100% !important;
+  padding: 12px !important;
+  box-sizing: border-box;
+}
+
+.books-grid .book-cover {
+  width: 100% !important;
+  height: 190px !important;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.books-grid .book-cover img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+}
+
+.books-grid .book-card h3 {
+  font-size: 15px !important;
+}
+
+.books-grid .book-card p {
+  font-size: 12px !important;
+}
+
+.books-grid .book-card a {
+  font-size: 12px !important;
+  padding: 9px 6px !important;
+}
+/* StudyNova Premium Design */
+
+body {
+  background: #f5f7ff;
+}
+
+.book-card {
+  background: #ffffff;
+  border: 1px solid #e8eafd;
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 8px 28px rgba(47, 46, 116, 0.08);
+}
+
+.book-card h3 {
+  font-size: 22px;
+  color: #302a8c;
+}
+
+.book-card a {
+  background: linear-gradient(135deg, #6d5dfc, #4169e1);
+  border-radius: 12px;
+  padding: 13px 22px;
+}
+
+.book-card a:hover {
+  background: linear-gradient(135deg, #5141df, #3154c5);
+}
+
+@media (min-width: 768px) {
+  .book-card {
+    width: calc(50% - 16px);
+    margin: 0 12px 20px 0;
+  }
+}
+
+.studynova-home input[type="text"] {
+  border: 2px solid #6366f1;
+  border-radius: 25px;
+  outline: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.studynova-home input[type="text"]:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.3);
+}
+
+.books-grid .book-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.books-grid .book-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.studynova-home > h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 35px 20px 18px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #6366f1;
+}
+
+.books-grid .book-card a {
+  display: inline-block;
+  padding: 10px 14px;
+  background: #6366f1;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.books-grid .book-card a:hover {
+  background: #4338ca;
+}
+
+@media (max-width: 600px) {
+  .books-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+  }
+
+  .books-grid .book-card {
+    padding: 8px !important;
+    min-width: 0;
+  }
+
+  .books-grid .book-cover {
+    height: 150px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .studynova-home > h2 {
+    font-size: 20px;
+    margin: 25px 12px 12px;
+  }
+}
+
+.studynova-home {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .studynova-home {
+    overflow-x: clip;
+  }
+}
+
+@media (max-width: 600px) {
+  .books-grid .book-card a {
+    display: block;
+    padding: 9px 5px;
+    font-size: 12px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+.auto-book-cover {
+  width: 100%;
+  min-height: 180px;
+  background: linear-gradient(135deg, #4338ca, #7c3aed);
+  color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.auto-book-cover span {
+  font-size: 45px;
+}
+
+.auto-book-cover h3 {
+  font-size: 15px;
+  margin-top: 12px;
+  color: white;
+}
+/* StudyNova Clean Book Cover Design */
+
+.books-grid .book-cover {
+  height: 230px !important;
+  min-height: 230px !important;
+  width: 100% !important;
+  padding: 12px !important;
+  box-sizing: border-box;
+  background: #0b1428 !important;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.books-grid .auto-book-cover {
+  width: 155px;
+  height: 205px;
+  min-height: 0;
+  padding: 20px 14px;
+  box-sizing: border-box;
+  border-radius: 4px 10px 10px 4px;
+  background: linear-gradient(145deg, #1e3a5f, #2563eb);
+  border-left: 7px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 6px 8px 15px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  overflow: hidden;
+}
+
+.books-grid .auto-book-cover.cover-1 {
+  background: linear-gradient(145deg, #14532d, #059669);
+}
+
+.books-grid .auto-book-cover.cover-2 {
+  background: linear-gradient(145deg, #581c87, #9333ea);
+}
+
+.books-grid .auto-book-cover.cover-3 {
+  background: linear-gradient(145deg, #7c2d12, #ea580c);
+}
+
+.books-grid .auto-book-cover.cover-4 {
+  background: linear-gradient(145deg, #881337, #e11d48);
+}
+
+.books-grid .auto-book-cover.cover-5 {
+  background: linear-gradient(145deg, #164e63, #0891b2);
+}
+
+.books-grid .auto-book-cover .cover-label,
+.books-grid .auto-book-cover .cover-footer {
+  font-size: 9px !important;
+  line-height: 1.3 !important;
+  letter-spacing: 0.3px !important;
+  color: white;
+  opacity: 0.8;
+}
+
+.books-grid .auto-book-cover .cover-icon {
+  font-size: 25px !important;
+}
+
+.books-grid .auto-book-cover h3 {
+  font-size: 14px !important;
+  line-height: 1.3 !important;
+  color: white !important;
+  margin: 8px 0 !important;
+  overflow-wrap: anywhere;
+}
+
+.books-grid .book-cover img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+}
