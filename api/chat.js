@@ -34,10 +34,12 @@ export default async function handler(req, res) {
   }
 
   try {
+    const signal = AbortSignal.timeout(15000);
     const response = await fetch(
       "https://api.openai.com/v1/chat/completions",
       {
         method: "POST",
+        signal,
         headers: {
           Authorization: `Bearer ${apiKey}`,
           "Content-Type": "application/json"
